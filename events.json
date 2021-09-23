@@ -1,0 +1,6 @@
+{
+  "hitType": "event",
+  "eventCategory": "cookie-notice",
+  "eventAction": "click",
+  "eventLabel": "close-cookie-bar"
+}

@@ -1,0 +1,14 @@
+{
+  "extends": ["plugin:cypress/recommended"],
+  "env": {
+    "cypress/globals": true,
+    "es7s": true,
+    "node": true,
+    "browser": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "plugins": ["cypress", "cypress-promise"]
+}

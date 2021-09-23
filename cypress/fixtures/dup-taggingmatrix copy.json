@@ -1,0 +1,187 @@
+[{
+        "data-cy": "global-cookie-notice-privacy-a-href-ext",
+        "data-gtm-category": "cookie-notice",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "privacy-policy"
+    },
+    {
+        "data-cy": "global-menu-external-a-href-ext",
+        "data-gtm-category": "header",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "https://trudhesahcp.com"
+    },
+    {
+        "data-cy": "global-menu-external-a-href-ext",
+        "data-gtm-category": "header",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "https://trudhesahcp.com"
+    },
+    {
+        "data-cy": "global-cookie-notice--a-int",
+        "data-gtm-category": "cookie-notice",
+        "data-gtm-action": "click",
+        "data-gtm-label": "close-cookie-bar"
+    },
+    {
+        "data-cy": "global-menu-external-a-href-int",
+        "data-gtm-category": "header",
+        "data-gtm-action": "file-download",
+        "data-gtm-label": "medication-guide-header"
+    },
+    {
+        "data-cy": "global-menu-external-a-href-int",
+        "data-gtm-category": "header",
+        "data-gtm-action": "click",
+        "data-gtm-label": "isi-header"
+    },
+    {
+        "data-cy": "global-menu-external-a-href-int",
+        "data-gtm-category": "header",
+        "data-gtm-action": "file-download",
+        "data-gtm-label": "prescribing-information-header"
+    },
+    {
+        "data-cy": "global-site-header-a-href-int",
+        "data-gtm-category": "header",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "trudhesa-logo"
+    },
+    {
+        "data-cy": "global-menu-connect-lozenge-button",
+        "data-gtm-category": "header",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "stay-informed-header"
+    },
+    {
+        "data-cy": "global-menu-trigger-icon",
+        "data-gtm-category": "navigation",
+        "data-gtm-action": "click",
+        "data-gtm-label": "hamburger-navigation-open"
+    },
+    {
+        "data-cy": "global-menu-main-li-a-href-int",
+        "data-gtm-category": "navigation",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "why-up-nose-nav"
+    },
+    {
+        "data-cy": "global-menu-main-li-a-href-int",
+        "data-gtm-category": "navigation",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "trudhesa-difference-nav"
+    },
+    {
+        "data-cy": "global-wrap-isi-a-href-tel-ext",
+        "data-gtm-category": "sticky-isi",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "fda-phone"
+    },
+    {
+        "data-cy": "global-menu-main-li-a-href-int",
+        "data-gtm-category": "navigation",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "getting-trudhesa-nav"
+    },
+    {
+        "data-cy": "global-menu-main-li-a-href-int",
+        "data-gtm-category": "navigation",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "faqs-nav"
+    },
+    {
+        "data-cy": "global-menu-main-li-a-href-lozenge-button",
+        "data-gtm-category": "navigation",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "stay-informed-nav"
+    },
+    {
+        "data-cy": "global-img-menu-close-icon",
+        "data-gtm-category": "navigation",
+        "data-gtm-action": "click",
+        "data-gtm-label": "close-nav"
+    },
+    {
+        "data-cy": "global-isi-a-href-int",
+        "data-gtm-category": "sticky-isi",
+        "data-gtm-action": "click",
+        "data-gtm-label": "isi-sticky-redirect"
+    },
+    {
+        "data-cy": "global-cta-div-lozenge-button",
+        "data-gtm-category": "cta",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "getting-trudhesa-cta"
+    },
+    {
+        "data-cy": "global-cta-div-lozenge-button",
+        "data-gtm-category": "cta",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "stay-informed-cta"
+    },
+    {
+        "data-cy": "global-wrap-isi-a-href-int",
+        "data-gtm-category": "sticky-isi",
+        "data-gtm-action": "internal-link",
+        "data-gtm-label": "trudhesa.com"
+    },
+    {
+        "data-cy": "global-wrap-isi-a-href-tel-ext",
+        "data-gtm-category": "sticky-isi",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "report-side-effects-phone"
+    },
+    {
+        "data-cy": "global-wrap-isi-a-href-tel-ext",
+        "data-gtm-category": "sticky-isi",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "fda-phone"
+    },
+    {
+        "data-cy": "global-footer-a-href-ext",
+        "data-gtm-category": "footer",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "https://impelnp.com/privacypolicy/"
+    },
+    {
+        "data-cy": "global-footer-a-href-ext",
+        "data-gtm-category": "footer",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "https://impelnp.com/termsof-nservice/"
+    },
+    {
+        "data-cy": "global-footer-a-href-ext",
+        "data-gtm-category": "footer",
+        "data-gtm-action": "external-link",
+        "data-gtm-label": "https://trudhesahcp.com"
+    },
+    {
+        "data-cy": "global-modal-cont-lonzenge-button",
+        "data-gtm-category": "leaving-interstitial",
+        "data-gtm-action": "click",
+        "data-gtm-label": "https://impelnp.com/"
+    },
+    {
+        "data-cy": "global-modal-cancel-int",
+        "data-gtm-category": "leaving-interstitial",
+        "data-gtm-action": "click",
+        "data-gtm-label": "https://impelnp.com/"
+    },
+    {
+        "data-cy": "global-modal-cancel-int",
+        "data-gtm-category": "leaving-interstitial",
+        "data-gtm-action": "click",
+        "data-gtm-label": "https://impelnp.com/"
+    },
+    {
+        "data-cy": "global-footer-a-href-ext",
+        "data-gtm-category": "leaving-interstitial",
+        "data-gtm-action": "click",
+        "data-gtm-label": "https://impelnp.com/"
+    },
+    {
+        "data-cy": "global-footer-a-href-ext",
+        "data-gtm-category": "leaving-interstitial",
+        "data-gtm-action": "click",
+        "data-gtm-label": "exit-modal"
+    }
+]

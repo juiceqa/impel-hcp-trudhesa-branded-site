@@ -1,0 +1,8 @@
+
+.DS_Store
+../.DS_Store
+../../.DS_Store
+**.*.spec.ts.snap
+cypress/integration/__snapshots__/*
+node_modules
+package-lock.json

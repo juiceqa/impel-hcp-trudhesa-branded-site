@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/",
+    "env": {
+        "envValue": "production"
+    }
+}

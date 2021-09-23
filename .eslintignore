@@ -1,0 +1,4 @@
+config/*.js
+mochawesome-report
+node_modules
+cypress/integration/examples

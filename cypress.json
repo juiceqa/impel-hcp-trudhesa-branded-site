@@ -1,0 +1,57 @@
+{
+    "baseUrl": "https://arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/",
+    "projectId": "d2z5p5",
+    "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
+    "chromeWebSecurity": false,
+    "failOnStatusCode": false,
+    "defaultCommandTimeout": 30000,
+    "nodeVersion": "system",
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "experimentalStudio": true,
+    "experimentalSessionSupport": true,
+    "experimentalDecorators": true,
+    "experimentalFetchPolyfill": true,
+    "defaultCommandTimeouts": 10000,
+    "responseTimeout": 60000,
+    "includeShadowDom": true,
+    "watchForFileChanges": true,
+    "numTestsKeptInMemory": 4,
+    "trashAssetsBeforeRuns": true,
+    "scrollBehavior": "center",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    },
+    "videoCompression": 3,
+    "video": true,
+    "env": {
+        "cypress-plugin-snapshots": {
+            "updateSnapshots": true,
+            "normalizeJson": false,
+            "screenshotConfig": {
+                "blackout": [],
+                "capture": "fullPage",
+                "clip": null,
+                "disableTimersAndAnimations": true,
+                "log": true,
+                "scale": false,
+                "timeout": 30000
+            },
+            "browserPermissions": {
+                "notifications": "allow",
+                "geolocation": "allow",
+                "camera": "allow",
+                "microphone": "allow",
+                "images": "allow",
+                "javascript": "allow",
+                "popups": "allow",
+                "plugins": "allow",
+                "cookies": "allow"
+            }
+        }
+    }
+}

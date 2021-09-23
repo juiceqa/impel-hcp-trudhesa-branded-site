@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "include": [
+    "./**/*.ts",
+    "./**/*.js",
+    "cypress/integration/selectors/external-links.spec.t/s"
+  ],
+  "exclude": [],
+  "compilerOptions": {
+    "baseUrl": "https://trudhesa.com/",
+    "types": ["cypress", "cypress-commands", "cypress-plugin-snapshot"],
+    "lib": ["es6", "dom"],
+    "isolatedModules": false,
+    "allowJs": true,
+    "noEmit": true
+  },
+  "files": ["index.d.ts"]
+}

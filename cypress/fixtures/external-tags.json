@@ -1,0 +1,21 @@
+const externals = {
+        dataCy: "global-cookie-notice-privacy-a-href-ext",
+        dataGtmCategory: "cookie-notice",
+        dataGtmAction: "external-link",
+        dataGtmLabel: "privacy-policy"
+    },
+    {
+        dataCy: "global-menu-external-a-href-ext",
+        dataGtmCategory: "header",
+        dataGtmAction: "external-link",
+        dataGtmLabel: "https://trudhesahcp.com"
+    }, {
+        dataCy: "global-menu-external-a-href-ext",
+        dataGtmCategory: "header",
+        dataGtmAction: "external-link",
+        dataGtmLabel: "https://trudhesahcp.com"
+    },
+
+    const func = (param) => {
+        console.log((param.selector, param.categopry, param.action), param.label)
+    }
