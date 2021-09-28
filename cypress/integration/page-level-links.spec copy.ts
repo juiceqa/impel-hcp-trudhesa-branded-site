@@ -4,55 +4,48 @@
 
 var cyView = require("cy-view")
 
-var devices = [
-  {
-    model: "macbook-15",
-    width: 1440,
-    height: 900,
-  },
-]
 // Add urls to test against
-var urls = [
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/why-up-the-nose",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/trudhesa-difference",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/how-to-use",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/getting-trudhesa",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/faqs",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/stay-informed",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/important-safety-information",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/unsubscribe",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/unsubscribe-confirmation",
-  "arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/subscription-confirmation",
+const urls = [
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/stay-informed",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/about-trudhesa/",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/efficacy",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/patient-benefits",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/coverage-and-savings",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/how-to-use",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/how-to-prescribe",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/unsubscribe",
+  "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io/important-safety-information"
 ]
 
-const trudhesaPatientPageLevelExternalLinkEvents = cyView(devices)
+const trudhesaHCPPageLevelExternalLinkEvsents = cyView(urls)
 
-trudhesaPatientPageLevelExternalLinkEvents(urls, async () => {
-  describe("return all page level external links", async () => {
-    it(`return direct parent for all external links `, async () => {
-      it(`appends each selector with data attributes `, function () {
-        cy.get("@internalsNonGlobal")
-          .each(($el) => {
-            const extSelectorText = $el.text()
-            const extSelectorParent = $el.prop("className")
+trudhesaHCPPageLevelExternalLinkEvsents(urls, () => {
+  describe("return all page level external links", () => {
+    it(`return direct parent for all external links `, () => {
+      const ext_tags = require("../fixtures/taggingmatrix.json")
 
-            cy.wrap($el)
-              .invoke(
-                "attr",
-                "data-cy",
-                "global-ext-event-" + extSelectorText + "-" + extSelectorParent
-              )
-              .should(
-                "have.attr",
-                "data-cy",
-                "global-ext-event-" + extSelectorText + "-" + extSelectorParent
-              )
+      Object.values(ext_tags)
+      .forEach(function (value) {
+        cy.get("@internals").each(($el) => {
+          cy.wrap($el)
+            .invoke("attr", {
+              "data-cy": ext_tags.dataCy,
+              "data-gtm-category": ext_tags.dataGtmCategory,
+              "data-gtm-action": ext_tags.dataGtmAction,
+              "data-gtm-label": ext_tags.dataGtmLabel,
+            })  
+            .should(`have.attr`, {
+              "data-cy": ext_tags.dataCy,
+              "data-gtm-category": ext_tags.dataGtmCategory,
+              "data-gtm-action": ext_tags.dataGtmAction,
+              "data-gtm-label": ext_tags.dataGtmLabel,
+            })  
+            console.log(value)
+  
+              cy.get('html').toMatchSnapshot("dataCyAttrExtGlobalTags")
           })
-          .then(() => {
-            //@ts-ignore
-            cy.document().toMatchSnapshot("dataCyAttrExtPageTags")
-          })
+        })
       })
     })
   })
-})

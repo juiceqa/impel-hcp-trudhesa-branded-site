@@ -5,7 +5,7 @@ const WebpackLighthousePlugin = require("webpack-lighthouse-plugin")
 module.exports = {
     plugins: [
         new WebpackLighthousePlugin({
-            url: "https://trudhesa.com/",
+            url: "https://trudhesahcp.com/",
             saveArtifacts: true,
             perf: true,
             disableCPUThrottling: false,

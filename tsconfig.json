@@ -8,7 +8,7 @@
   "exclude": [],
   "compilerOptions": {
     "baseUrl": "https://trudhesa.com/",
-    "types": ["cypress", "cypress-commands", "cypress-plugin-snapshot"],
+    "types": ["cypress", "cypress-commands"],
     "lib": ["es6", "dom"],
     "isolatedModules": false,
     "allowJs": true,

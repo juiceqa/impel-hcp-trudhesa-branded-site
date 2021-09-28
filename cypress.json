@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://arteric:Letmein1@dev1-trudhesa-com.impel.client.rtrc.io/",
+    "baseUrl": "https://impeltester:ZJZ86tTtvZrU5s@test-trudhesahcp.pantheonsite.io",
     "projectId": "d2z5p5",
     "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
     "chromeWebSecurity": false,

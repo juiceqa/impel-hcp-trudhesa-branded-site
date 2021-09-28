@@ -78,11 +78,9 @@ beforeEach(function() {
     }).as("gaCollect")
     cy.visit('/')
     cy.get(
-        "a:not(.site-header > a[href]):not(#menu-external > li > a[href]):not(#menu-main > li > a[href]):not(.cookie-notice-container > a[href]):not(#cn-notice-text > a):not(#cn-notice-buttons > a[href]):not(.lozenge > a):not(button):not(img#menu-c lose):not(a > .main-isi-title)"
-    ).as("internalsNonGlobal")
-    cy.get(
-        'a:not([href^="https://dev1-trudhesa-com.impel.client.rtrc.io/"]):not([href^="#"]):not([href^="/"]):not([href^="https://www.trudhesa.com"]):not([href="javascript:void(0)"]):not(#cn-notice-text):not(#cn-close-notice.cn-close-icon):not(#cn-notice-buttons):not(:contains("Continue")):not(:contains("Close"))'
-    ).as("externals")
+        "a").as("internalsNonGlobal")
+    cy.get('a:not([href^="https://test-trudhesahcp.pantheonsite.io/"]').as("externals")
+
     cy.get(
         ".site-header > a[href], #menu-external > li > a[href], #menu-main > li > a[href], .cookie-notice-container > a[href], #cn-notice-text > a, #cn-notice-buttons > a[href], .lozenge > a, button, img#menu-c lose, a > .main-isi-title"
     ).as("internals")
